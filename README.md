@@ -1,6 +1,7 @@
 # hexapod-control-system-
 六足机器人控制系统代码
 # 🦿 Hexapod Control System | 六足机器人控制系统
+有问题请联系邮箱：h3438379874@163.com
 
 基于 Arduino Mega 2560 与 ESP32 的 18 自由度六足机器人控制系统，集成三角步态算法、AI 语音交互、WiFi 实时视频流、多传感器环境感知等功能。
 
