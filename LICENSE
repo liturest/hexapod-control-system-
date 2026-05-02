@@ -52,11 +52,11 @@ SOFTWARE.
 
 ### 中文字库说明
 
-项目中包含的自定义中文字库 (`font_chinese.h`) 由本项目作者独立取模制作，字库内的字体数据仅供本设备显示使用，请勿将其提取后用于其他商业项目。
+项目中包含的自定义中文字库 (`font_chinese.h`) 由本项目作者独立取模制作，字库内的字体数据仅供本设备显示使用，请勿将其提取后用于其他商业项目。若有需要请联系作者。
 
 ### 3D 打印外壳
 
-如有需要，可在本仓库的 `hardware/` 目录下获取外壳的 STL 模型文件。模型文件同样采用 MIT 协议开源，可自由修改和打印。
+如有需要，请联系作者取得STL文件。模型文件同样采用 MIT 协议开源，可自由修改和打印。
 
 ### 二次开发建议
 
@@ -106,11 +106,11 @@ This project utilizes the following third-party cloud services. You must obtain 
 
 ### Chinese Font Library
 
-The custom Chinese font library (`font_chinese.h`) included in this project was independently created by the author using bitmap generation tools. The font data is intended solely for use on this device's display. Please do not extract and use it in other commercial projects.
+The custom Chinese font library (`font_chinese.h`) included in this project was independently created by the author using bitmap generation tools. The font data is intended solely for use on this device's display. Please do not extract and use it in other commercial projects.Please contact the author if necessary.
 
 ### 3D Printed Shell
 
-If needed, STL model files for the shell are available in the `hardware/` directory of this repository. These files are also open-sourced under the MIT License and may be freely modified and printed.
+Please contact the author for STL documents if needed. The model files are also open-sourced under the MIT protocol and can be freely modified and printed.
 
 ### Derivative Works
 
