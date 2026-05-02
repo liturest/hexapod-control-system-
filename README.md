@@ -161,37 +161,18 @@ ESPAsyncWebServer
 Arduino Mega 2560 主控
 
 text
-1. 打开 mega/hexapod_main.ino
+1. 打开 hexapod-control-system/main.cpp
 2. 选择开发板: Tools → Board → Arduino Mega or Mega 2560
 3. 选择端口 → 上传
 ESP32-WROOM-32 (AI模块)
 
 text
-1. 打开 esp32_ai/esp32_ai.ino
+1. 打开 hexapod-control-system/ESP 32-CAM code.cpp
 2. 选择开发板: ESP32 Dev Module
 3. 修改 API Key (见下文)
 4. 选择端口 → 上传
 ESP32-CAM (摄像头模块)
 
-text
-1. 打开 esp32_cam/esp32_cam.ino
-2. 选择开发板: AI Thinker ESP32-CAM
-3. 修改 WiFi 名称和密码
-4. 使用 USB-TTL 烧录器上传
-⚙️ API 密钥配置
-在 esp32_ai/wifi_config.h 中修改：
-
-cpp
-// WiFi 热点配置
-#define AP_SSID     "Hexapod_AI"
-#define AP_PASSWORD "12345678"
-
-// 百度语音 API
-#define BAIDU_API_KEY    "你的API Key"
-#define BAIDU_SECRET_KEY "你的Secret Key"
-
-// 阿里云大模型 API
-#define ALI_LLM_API_KEY  "你的API Key"
 🎮 使用说明
 开机自检
 装入 3 节 18650 电池和 9V 电池
@@ -210,18 +191,11 @@ OK	停止
 1	AI 语音模式
 2	避障模式
 观看实时视频
-连接 WiFi 热点：Hexapod_CAM (默认无密码)
+连接 WiFi 热点：ESP32_CAM (密码是：123456)
 
 浏览器输入：http://192.168.4.1
 
 手机/PC 均可查看实时画面
-
-AI 语音对话
-按下遥控器 "1" 键进入 AI 模式
-
-听到提示音后开始说话
-
-等待 2-3 秒，机器人会语音回复
 
 📐 运动算法详解
 抬腿高度 (正弦平滑)
