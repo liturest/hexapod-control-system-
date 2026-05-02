@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 利图雷斯特
+Copyright (c) 2026 liturest
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,114 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+---
+
+## 📋 补充说明
+
+### 硬件安全警告
+
+本项目涉及 18 路大电流舵机、锂电池组及高压供电系统。使用本软件控制硬件设备时，请务必遵守以下安全规范：
+
+1. **电池安全**：使用锂电池时必须搭配合格的 BMS 保护板，防止过充、过放、短路。
+2. **供电安全**：舵机供电回路必须配置均流电阻和滤波电容，严禁直接使用普通电源适配器驱动多路舵机。
+3. **舵机保护**：请严格遵守代码中设定的角度限位值，机械卡死可能导致舵机烧毁或设备损坏。
+4. **操作环境**：请在干燥、无静电环境下操作，长时间不使用请移除所有电池。
+
+> ⚠️ **免责声明**：因未遵守上述安全规范导致的人身伤害、设备损坏或财产损失，本项目作者不承担任何责任。
+
+### 第三方服务声明
+
+本项目使用了以下第三方云服务，使用前你需要自行申请 API 密钥：
+
+| 服务 | 提供商 | 用途 | 申请地址 |
+|------|--------|------|----------|
+| 语音识别 (STT) | 百度智能云 | 语音转文字 | https://ai.baidu.com |
+| 语音合成 (TTS) | 百度智能云 | 文字转语音 | https://ai.baidu.com |
+| 大模型对话 (LLM) | 阿里云 | AI 对话生成 | https://www.aliyun.com |
+
+- 上述服务的费用、使用条款及隐私政策由各提供商独立负责。
+- 本项目代码中不包含任何有效的 API 密钥，使用前请替换为你自己的密钥。
+- 请勿将包含有效 API 密钥的代码上传至公开仓库。
+
+### 中文字库说明
+
+项目中包含的自定义中文字库 (`font_chinese.h`) 由本项目作者独立取模制作，字库内的字体数据仅供本设备显示使用，请勿将其提取后用于其他商业项目。
+
+### 3D 打印外壳
+
+如有需要，可在本仓库的 `hardware/` 目录下获取外壳的 STL 模型文件。模型文件同样采用 MIT 协议开源，可自由修改和打印。
+
+### 二次开发建议
+
+欢迎对本项目进行二次开发！建议你在衍生项目中：
+
+- 保留原始作者署名及本仓库链接
+- 如修改了舵机角度或运动参数，请在代码注释中清晰标注
+- 发布衍生作品时，建议附上修改说明
+
+---
+
+## 📧 联系作者
+
+- **作者**：liturest
+- **邮箱**：h3438379874@163.com
+
+
+*以上补充声明旨在帮助使用者安全、合规地使用本项目，不影响 MIT License 正文所授予的权利。*
+
+
+## 📋 Supplementary Notice
+
+### Hardware Safety Warning
+
+This project involves 18 high-current servos, Li-ion battery packs, and high-voltage power systems. When using this software to control hardware, please follow these safety guidelines:
+
+1. **Battery Safety**: Always use a qualified BMS (Battery Management System) with Li-ion batteries to prevent overcharge, over-discharge, and short circuits.
+2. **Power Safety**: The servo power circuit must include current-sharing resistors and filter capacitors. Never use a standard power adapter to drive multiple servos directly.
+3. **Servo Protection**: Strictly adhere to the angle limits defined in the code. Mechanical stalling may cause servo burnout or equipment damage.
+4. **Operating Environment**: Operate in a dry, static-free environment. Remove all batteries when not in use for extended periods.
+
+> ⚠️ **Disclaimer**: The author assumes no liability for personal injury, equipment damage, or property loss resulting from failure to follow the above safety guidelines.
+
+### Third-Party Services
+
+This project utilizes the following third-party cloud services. You must obtain your own API keys before use:
+
+| Service | Provider | Purpose | Apply At |
+|---------|----------|---------|----------|
+| Speech Recognition (STT) | Baidu AI Cloud | Speech-to-Text | https://ai.baidu.com |
+| Speech Synthesis (TTS) | Baidu AI Cloud | Text-to-Speech | https://ai.baidu.com |
+| LLM Conversation | Alibaba Cloud | AI Dialogue | https://www.aliyun.com |
+
+- Fees, terms of service, and privacy policies for the above services are the sole responsibility of each provider.
+- This repository contains **no valid API keys**. Replace them with your own before use.
+- **Do not** upload code containing active API keys to public repositories.
+
+### Chinese Font Library
+
+The custom Chinese font library (`font_chinese.h`) included in this project was independently created by the author using bitmap generation tools. The font data is intended solely for use on this device's display. Please do not extract and use it in other commercial projects.
+
+### 3D Printed Shell
+
+If needed, STL model files for the shell are available in the `hardware/` directory of this repository. These files are also open-sourced under the MIT License and may be freely modified and printed.
+
+### Derivative Works
+
+Derivative projects based on this work are welcome! It is recommended to:
+
+- Retain the original author attribution and a link to this repository
+- Clearly annotate in code comments if servo angles or motion parameters are modified
+- Include a changelog when publishing derivative works
+
+---
+
+## 📧 Contact
+
+- **Author**: liturest
+- **Email**: h3438379874@163.com
+
+---
+
+*This supplementary notice is intended to help users use this project safely and compliantly. It does not affect the rights granted under the MIT License.*
